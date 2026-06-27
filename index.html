@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>DBESFILM Portfolio</title>
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <title>DBESFILM — Video montaža za nekretnine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>DBESFILM</h1>
-  <p>Izrada videa za nekretnine</p>
+  <main class="page">
+    <header class="site-header">
+      <a class="logo" href="/">DBESFILM</a>
+      <a class="contact-link" href="mailto:david@dbesfilm.hr">Kontakt</a>
+    </header>
 
-  <h2>Odabrani radovi</h2>
+    <section class="intro">
+      <h1>DBESFILM</h1>
+      <p>Video montaža za nekretnine</p>
+    </section>
 
-  <p>Portfolio dolazi uskoro.</p>
+    <section class="work-grid">
 
-  <p>Kontakt: david@dbesfilm.com</p>
+    <a class="project-card"
+       href="https://facebook.com"
+       target="_blank">
+
+        <div class="project-image-wrap">
+
+            <img
+                class="project-image"
+                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
+                alt="Projekt">
+
+            <div class="project-overlay">
+                <span>Pogledaj cijeli video</span>
+            </div>
+
+        </div>
+
+        <div class="project-info">
+
+            <h3 class="project-title">
+                Moderna vila
+            </h3>
+
+            <p class="project-description">
+                Kratki opis projekta ide ovdje.
+            </p>
+
+            <div class="project-meta">
+
+                <div>
+                    Rezultat
+                    <strong>5 novih upita</strong>
+                </div>
+
+                <div>
+                    Pregledi
+                    <strong>92.000+</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </a>
+
+</section>
+
+    <footer class="site-footer">
+      <p>David Bešenić · DBESFILM</p>
+      <a href="mailto:david@dbesfilm.hr">david@dbesfilm.hr</a>
+    </footer>
+  </main>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
