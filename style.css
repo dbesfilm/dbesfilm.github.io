@@ -283,3 +283,67 @@ a {
     margin: 0 0 12px;
   }
 }
+
+.site-footer {
+  display: block;
+  margin-top: 90px;
+  padding-top: 0;
+}
+
+.contact-section {
+  padding: 90px 0 40px;
+  border-top: 1px solid var(--line);
+  max-width: 900px;
+}
+
+.contact-section h2 {
+  margin: 0 0 22px;
+  font-size: clamp(38px, 6vw, 82px);
+  line-height: .95;
+  letter-spacing: -.06em;
+  color: var(--text);
+}
+
+.contact-section p {
+  margin: 0 0 34px;
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.contact-button,
+.copy-button {
+  appearance: none;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-button {
+  background: #f4f4f4;
+  color: #0b0b0b;
+  margin-right: 12px;
+}
+
+.copy-button {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 640px) {
+  .contact-button,
+  .copy-button {
+    width: 100%;
+    margin: 0 0 12px;
+  }
+}
