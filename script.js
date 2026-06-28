@@ -17,28 +17,57 @@ document.addEventListener("DOMContentLoaded", () => {
     // Email
     const email = "david@dbesfilm.hr";
 
-    document
-        .getElementById("emailButton")
-        .addEventListener("click", () => {
+    // Pošalji email
+    const emailButton = document.getElementById("emailButton");
+
+    if (emailButton) {
+        emailButton.addEventListener("click", (e) => {
+            e.preventDefault();
             window.location.href = `mailto:${email}`;
         });
+    }
 
-    document
-        .getElementById("copyEmail")
-        .addEventListener("click", async () => {
+    // Kopiraj email
+    const copyButton = document.getElementById("copyEmail");
 
-            await navigator.clipboard.writeText(email);
+    if (copyButton) {
+        copyButton.addEventListener("click", async () => {
 
-            const btn = document.getElementById("copyEmail");
+            try {
+                await navigator.clipboard.writeText(email);
 
-            const original = btn.textContent;
+                const original = copyButton.textContent;
 
-            btn.textContent = "✓ Email kopiran";
+                copyButton.textContent = "✓ Email kopiran";
 
-            setTimeout(() => {
-                btn.textContent = original;
-            }, 1800);
+                setTimeout(() => {
+                    copyButton.textContent = original;
+                }, 1800);
+
+            } catch (err) {
+                alert(email);
+            }
 
         });
+    }
+
+    // Header "Kontakt"
+    const contactLink = document.querySelector(".contact-link");
+    const contactSection = document.getElementById("kontakt");
+
+    if (contactLink && contactSection) {
+
+        contactLink.addEventListener("click", (e) => {
+
+            e.preventDefault();
+
+            contactSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        });
+
+    }
 
 });
