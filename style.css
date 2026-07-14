@@ -306,25 +306,22 @@ a {
 
 .contact-image {
   width: 100%;
-  max-width: 480px;
+  max-width: 460px;
   justify-self: end;
-  overflow: hidden;
-  border-radius: 2px;
-  background: var(--card);
+  align-self: center;
 }
 
 .contact-image img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: auto;
+  border-radius: 18px;
   object-fit: cover;
-  object-position: center 35%;
-  filter: saturate(0.92) contrast(1.03);
-  transition: transform 0.7s ease;
+  transition: transform .6s ease;
 }
 
 .contact-image:hover img {
-  transform: scale(1.025);
+  transform: scale(1.02);
 }
 
 @media (max-width: 980px) {
