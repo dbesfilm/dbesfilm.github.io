@@ -182,12 +182,10 @@ button {
   border-top: 1px solid var(--line);
 }
 
-.contact-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: clamp(48px, 7vw, 100px);
-  align-items: center;
-  padding: 90px 0 50px;
+.contact-section{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:48px;
 }
 
 .contact-copy {
