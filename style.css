@@ -371,3 +371,52 @@ button {
     max-width: none;
   }
 }
+
+.contact-person{
+    padding:28px;
+}
+
+.contact-person h3{
+    margin:0;
+    color:var(--text);
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:-0.04em;
+}
+
+.contact-person p{
+    margin:8px 0 22px;
+    color:var(--muted);
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+
+.contact-socials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--line);
+    padding-top:20px;
+}
+
+.contact-socials a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:48px;
+    transition:.25s;
+}
+
+.contact-socials a:not(:last-child){
+    border-right:1px solid var(--line);
+}
+
+.contact-socials a:hover{
+    transform:translateY(-2px);
+}
+
+.contact-socials img{
+    width:24px;
+    height:24px;
+    display:block;
+}
