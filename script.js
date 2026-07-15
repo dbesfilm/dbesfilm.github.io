@@ -19,25 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = "david@dbesfilm.hr";
 
 
-    // Gumb "Pošalji email" — izravno otvara Gmail
-    const emailButton = document.getElementById("emailButton");
-
-    if (emailButton) {
-        emailButton.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            const gmailUrl =
-                `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
-
-            const gmailWindow = window.open(gmailUrl, "_blank");
-
-            if (gmailWindow) {
-                gmailWindow.opener = null;
-            } else {
-                window.location.href = gmailUrl;
-            }
-        });
-    }
 
 
     // Gumb "Kopiraj email"
