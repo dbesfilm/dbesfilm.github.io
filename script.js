@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Fade in kartica
+    // Fade-in animacija kartica
     const cards = document.querySelectorAll(".project-card");
 
     cards.forEach((card, index) => {
@@ -8,66 +8,74 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.transform = "translateY(18px)";
 
         setTimeout(() => {
-            card.style.transition = "opacity .6s ease, transform .6s ease";
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
             card.style.opacity = "1";
             card.style.transform = "translateY(0)";
         }, index * 80);
     });
 
-    // Email
+
+    // Email adresa
     const email = "david@dbesfilm.hr";
 
-    // Pošalji email
+
+    // Gumb "Pošalji email" — izravno otvara Gmail
     const emailButton = document.getElementById("emailButton");
 
     if (emailButton) {
-        emailButton.addEventListener("click", (e) => {
-            e.preventDefault();
-            window.location.href = `mailto:${email}`;
+        emailButton.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const gmailUrl =
+                `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+
+            const gmailWindow = window.open(gmailUrl, "_blank");
+
+            if (gmailWindow) {
+                gmailWindow.opener = null;
+            } else {
+                window.location.href = gmailUrl;
+            }
         });
     }
 
-    // Kopiraj email
+
+    // Gumb "Kopiraj email"
     const copyButton = document.getElementById("copyEmail");
 
     if (copyButton) {
         copyButton.addEventListener("click", async () => {
-
             try {
                 await navigator.clipboard.writeText(email);
 
-                const original = copyButton.textContent;
+                const originalText = copyButton.textContent;
 
                 copyButton.textContent = "✓ Email kopiran";
 
                 setTimeout(() => {
-                    copyButton.textContent = original;
+                    copyButton.textContent = originalText;
                 }, 1800);
 
-            } catch (err) {
-                alert(email);
+            } catch (error) {
+                alert(`Email: ${email}`);
             }
-
         });
     }
 
-    // Header "Kontakt"
+
+    // Header gumb "Kontakt"
     const contactLink = document.querySelector(".contact-link");
     const contactSection = document.getElementById("kontakt");
 
     if (contactLink && contactSection) {
-
-        contactLink.addEventListener("click", (e) => {
-
-            e.preventDefault();
+        contactLink.addEventListener("click", (event) => {
+            event.preventDefault();
 
             contactSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start"
             });
-
         });
-
     }
 
 });
