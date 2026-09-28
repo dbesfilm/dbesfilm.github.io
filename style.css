@@ -434,3 +434,24 @@ button {
     padding: 24px 22px 18px;
   }
 }
+
+
+/* DIGITALNI CJENIK */
+
+.legal-footer {
+  padding: 0 0 28px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.legal-footer a {
+  opacity: 0.72;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.25s ease, color 0.25s ease;
+}
+
+.legal-footer a:hover {
+  opacity: 1;
+  color: var(--text);
+}
