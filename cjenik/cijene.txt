@@ -1,4 +1,4 @@
 naziv|cijena|sidrena_cijena|jedinica|posebni_oblik_prodaje
-Video montaža|30.00|30.00|sat|false
+Video montaža|35.00|30.00|sat|false
 Video montaža i kreativna priprema|50.00|50.00|sat|false
 Color grading|30.00|30.00|sat|false
