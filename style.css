@@ -436,26 +436,24 @@ button {
 }
 
 
-/* PRAVNE INFORMACIJE I PODACI O OBRTU */
+/* FOOTER — podaci o obrtu desno, ispod razdjelne crte */
 .legal-footer {
-  padding: 0 0 28px;
+  border-top: 1px solid var(--line);
+  padding: 22px 0 32px;
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(0, 640px);
+  column-gap: 44px;
   font-size: 12px;
+  line-height: 1.6;
   color: var(--muted);
 }
-.legal-footer a {
-  opacity: 0.72;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: opacity 0.25s ease, color 0.25s ease;
+.legal-links { display: flex; align-items: flex-start; }
+.legal-business { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
+.legal-business strong { color: var(--text); font-size: 12px; letter-spacing: .04em; }
+.legal-business a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.legal-business a:hover { color: var(--text); }
+@media (max-width: 760px) {
+  .legal-footer { grid-template-columns: 1fr; gap: 18px; }
+  .legal-links { order: 2; }
+  .legal-business { order: 1; }
 }
-.legal-footer a:hover {
-  opacity: 1;
-  color: var(--text);
-}
-
-.legal-business { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; line-height: 1.6; max-width: 920px; }
-.legal-business strong { color: var(--text); font-size: 12px; letter-spacing: .08em; }
-.legal-business a { opacity: 1; }
-.legal-links { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-.legal-links a { color: var(--text); }
-@media(max-width: 640px) { .legal-links { flex-direction: column; } }
