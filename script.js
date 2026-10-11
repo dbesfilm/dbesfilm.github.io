@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // Email adresa
-    const email = "david@dbesfilm.hr";
+    const email = "david@dbesfilm.com";
 
 
 

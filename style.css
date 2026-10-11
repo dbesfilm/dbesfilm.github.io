@@ -436,7 +436,7 @@ button {
 }
 
 
-/* DIGITALNI CJENIK */
+/* PRAVNE INFORMACIJE I PODACI O OBRTU */
 .legal-footer {
   padding: 0 0 28px;
   font-size: 12px;
@@ -452,3 +452,10 @@ button {
   opacity: 1;
   color: var(--text);
 }
+
+.legal-business { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; line-height: 1.6; max-width: 920px; }
+.legal-business strong { color: var(--text); font-size: 12px; letter-spacing: .08em; }
+.legal-business a { opacity: 1; }
+.legal-links { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.legal-links a { color: var(--text); }
+@media(max-width: 640px) { .legal-links { flex-direction: column; } }
