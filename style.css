@@ -436,24 +436,24 @@ button {
 }
 
 
-/* FOOTER — podaci o obrtu desno, ispod razdjelne crte */
+/* FOOTER — podaci o obrtu lijevo, copyright dolje desno */
 .legal-footer {
   border-top: 1px solid var(--line);
   padding: 22px 0 32px;
   display: grid;
-  grid-template-columns: minmax(160px, 1fr) minmax(0, 640px);
+  grid-template-columns: minmax(0, 640px) minmax(160px, 1fr);
   column-gap: 44px;
   font-size: 12px;
   line-height: 1.6;
   color: var(--muted);
 }
-.legal-links { display: flex; align-items: flex-start; }
-.legal-business { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
+.legal-links { display: flex; grid-column: 2; grid-row: 1; align-items: flex-end; justify-content: flex-end; align-self: end; text-align: right; }
+.legal-business { display: flex; grid-column: 1; grid-row: 1; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
 .legal-business strong { color: var(--text); font-size: 12px; letter-spacing: .04em; }
 .legal-business a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .legal-business a:hover { color: var(--text); }
 @media (max-width: 760px) {
   .legal-footer { grid-template-columns: 1fr; gap: 18px; }
-  .legal-links { order: 2; }
-  .legal-business { order: 1; }
+  .legal-links { grid-column: 1; grid-row: 2; justify-content: flex-start; text-align: left; }
+  .legal-business { grid-column: 1; grid-row: 1; }
 }
