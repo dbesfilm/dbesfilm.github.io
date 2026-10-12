@@ -1,3 +1,12 @@
+/* Lokalni Inter: postavite službenu InterVariable.woff2 datoteku u assets/fonts/ */
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/InterVariable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --bg: #0b0b0b;
   --card: #141414;
@@ -456,4 +465,31 @@ button {
   .legal-footer { grid-template-columns: 1fr; gap: 18px; }
   .legal-links { grid-column: 1; grid-row: 2; justify-content: flex-start; text-align: left; }
   .legal-business { grid-column: 1; grid-row: 1; }
+}
+
+/* Poveznica na privatnost ispod copyrighta */
+.legal-links { flex-direction: column; gap: 7px; }
+.legal-links a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.legal-links a:hover { color: var(--text); }
+
+/* Politika privatnosti */
+.policy-page { max-width: 960px; min-height: 80vh; }
+.policy-intro { margin: 64px 0 50px; }
+.policy-intro h1 { font-size: clamp(40px, 6vw, 76px); font-weight: 800; line-height: 1; letter-spacing: -.06em; margin: 0 0 16px; }
+.policy-intro p { color: var(--muted); font-size: 14px; }
+.policy-article { max-width: 780px; padding-bottom: 40px; }
+.policy-article section { margin: 0 0 34px; }
+.policy-article h2 { font-size: 20px; letter-spacing: -.025em; margin: 0 0 12px; }
+.policy-article p, .policy-article li { color: #c0c0c0; line-height: 1.8; font-size: 15px; }
+.policy-article ul { padding-left: 22px; }
+.policy-article a { text-decoration: underline; text-underline-offset: 3px; }
+.policy-article a:hover { color: #fff; }
+@media(max-width:640px) { .policy-intro { margin: 52px 0 36px; } }
+
+/* Pravne poveznice iznad copyrighta */
+.legal-links { justify-content: flex-end; }
+.legal-nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; }
+.legal-nav a { white-space: nowrap; }
+@media (max-width: 760px) {
+  .legal-links, .legal-nav { align-items: flex-start; justify-content: flex-start; }
 }
