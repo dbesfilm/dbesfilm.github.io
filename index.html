@@ -8,7 +8,7 @@
 
   <title>DBESFILM — Video montaža za nekretnine</title>
 
-<link rel="stylesheet" href="style.css?v=8" />
+<link rel="stylesheet" href="style.css?v=9" />
 </head>
 
 <body id="top">
@@ -23,9 +23,17 @@
       <p>Video montaža za nekretnine</p>
     </section>
 
-    <section class="work-grid">
+    <nav class="portfolio-filters" aria-label="Filtriraj radove">
+      <button type="button" class="portfolio-filter is-active" data-filter="sve" aria-pressed="true">Sve</button>
+      <button type="button" class="portfolio-filter" data-filter="nekretnine" aria-pressed="false">Nekretnine</button>
+      <button type="button" class="portfolio-filter" data-filter="interijeri" aria-pressed="false">Dizajn interijera</button>
+      <button type="button" class="portfolio-filter" data-filter="eventi" aria-pressed="false">Eventi</button>
+    </nav>
+    <p class="portfolio-empty" id="portfolio-empty" hidden role="status">U ovoj kategoriji još nema objavljenih radova.</p>
 
-  <a class="project-card"
+    <section class="work-grid" id="portfolio-grid">
+
+  <a class="project-card" data-category="nekretnine"
      href="https://www.instagram.com/reels/DUjGLQiDiGD/"
      target="_blank"
      rel="noopener noreferrer">
@@ -50,7 +58,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.youtube.com/shorts/BJ-NBKmmoaM"
      target="_blank"
      rel="noopener noreferrer">
@@ -75,7 +83,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/1937000883587753"
      target="_blank"
      rel="noopener noreferrer">
@@ -100,7 +108,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="interijeri"
      href="https://www.instagram.com/reel/DaUrTfTMlzJ/"
      target="_blank"
      rel="noopener noreferrer">
@@ -125,7 +133,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.youtube.com/watch?v=jpkDAf1JOho"
      target="_blank"
      rel="noopener noreferrer">
@@ -150,7 +158,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/1016529644572270"
      target="_blank"
      rel="noopener noreferrer">
@@ -175,7 +183,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.youtube.com/shorts/u10jlkzcv0M"
      target="_blank"
      rel="noopener noreferrer">
@@ -200,7 +208,108 @@
     </div>
   </a>
 
-  <a class="project-card"
+
+  <a class="project-card" data-category="eventi"
+     href="https://www.instagram.com/century21croatia/reel/DdjIRCxiaOp/"
+     target="_blank"
+     rel="noopener noreferrer">
+    <div class="project-image-wrap">
+      <img
+        class="project-image"
+        src="assets/images/gk2025-thumbnail.webp"
+        alt="Golden Key 2025 – najbolje misli Ivice Kostelića"
+        loading="lazy"
+        decoding="async">
+      <div class="project-overlay">
+        <span>Pogledaj cijeli video</span>
+      </div>
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">Najbolje misli Ivice Kostelića</h3>
+      <p class="project-description">Motivacijski trenuci koji su obilježili Golden Key Zagreb 2025.</p>
+      <div class="project-meta">
+        <div>Rezultat<strong>Promocija brenda</strong></div>
+        <div>Pregledi<strong>3.9K</strong></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="project-card" data-category="eventi"
+     href="https://www.instagram.com/century21croatia/reel/Dd_NXY7nMra/"
+     target="_blank"
+     rel="noopener noreferrer">
+    <div class="project-image-wrap">
+      <img
+        class="project-image"
+        src="assets/images/gk2026-thumbnail.webp"
+        alt="Golden Key 2026 – konferencija o nekretninama"
+        loading="lazy"
+        decoding="async">
+      <div class="project-overlay">
+        <span>Pogledaj cijeli video</span>
+      </div>
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">GOLDEN KEY 2026</h3>
+      <p class="project-description">Najveća konferencija o nekretninama ponovno stiže u Zagreb!</p>
+      <div class="project-meta">
+        <div>Rezultat<strong>Promocija brenda</strong></div>
+        <div>Pregledi<strong>1.2K</strong></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="project-card" data-category="eventi"
+     href="https://www.facebook.com/reel/2629870754056843"
+     target="_blank"
+     rel="noopener noreferrer">
+    <div class="project-image-wrap">
+      <img
+        class="project-image"
+        src="assets/images/team-build-thumbnail.webp"
+        alt="CENTURY 21 Teambuilding 2026"
+        loading="lazy"
+        decoding="async">
+      <div class="project-overlay">
+        <span>Pogledaj cijeli video</span>
+      </div>
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">CENTURY 21 Teambuilding 2026</h3>
+      <p class="project-description">Dan ispunjen odličnom energijom, druženjem i trenucima koje vrijedi pamtiti.</p>
+      <div class="project-meta">
+        <div>Rezultat<strong>Promocija brenda</strong></div>
+        <div>Pregledi<strong>1.1K</strong></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="project-card" data-category="interijeri"
+     href="https://www.instagram.com/ivadrkdesign/reel/Dcq18NztwZf/"
+     target="_blank"
+     rel="noopener noreferrer">
+    <div class="project-image-wrap">
+      <img
+        class="project-image"
+        src="assets/images/ivadnevni-thumbnail.webp"
+        alt="Dizajn radnog prostora"
+        loading="lazy"
+        decoding="async">
+      <div class="project-overlay">
+        <span>Pogledaj cijeli video</span>
+      </div>
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">Dizajn radnog prostora</h3>
+      <p class="project-description">Prikaz dizajna glavnog radnog prostora i rasvjete sa samo tri pozicije izvoda.</p>
+      <div class="project-meta">
+        <div>Rezultat<strong>Povećana vidljivost dizajna interijera</strong></div>
+        <div>Pregledi<strong>15.2K</strong></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/2063591794251658"
      target="_blank"
      rel="noopener noreferrer">
@@ -225,7 +334,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.instagram.com/reel/DaA77SfFNCD/"
      target="_blank"
      rel="noopener noreferrer">
@@ -250,7 +359,7 @@
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/1517575743118247"
      target="_blank"
      rel="noopener noreferrer">
@@ -276,7 +385,7 @@
   </a>
 
 
-<a class="project-card"
+<a class="project-card" data-category="interijeri"
 href="https://www.instagram.com/reel/DbsgH6QMDYp/"
 target="_blank"
 rel="noopener noreferrer">
@@ -301,7 +410,7 @@ fetchpriority="high">
 </div>
 </a>
 
-<a class="project-card"
+<a class="project-card" data-category="interijeri"
 href="https://www.instagram.com/reel/DcL5SlzsusL/"
 target="_blank"
 rel="noopener noreferrer">
@@ -326,7 +435,7 @@ fetchpriority="high">
 </div>
 </a>
 
-<a class="project-card"
+<a class="project-card" data-category="interijeri"
 href="https://www.instagram.com/reels/DcghVEHyJSk/"
 target="_blank"
 rel="noopener noreferrer">
@@ -351,7 +460,7 @@ fetchpriority="high">
 </div>
 </a>
 
-<a class="project-card"
+<a class="project-card" data-category="interijeri"
 href="https://www.instagram.com/reel/Dcq18NztwZf/"
 target="_blank"
 rel="noopener noreferrer">
@@ -376,7 +485,7 @@ fetchpriority="high">
 </div>
 </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="interijeri"
      href="https://www.instagram.com/reel/DYwvCl1sMed/"
      target="_blank"
      rel="noopener noreferrer">
@@ -401,7 +510,7 @@ fetchpriority="high">
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/1275829984336847"
      target="_blank"
      rel="noopener noreferrer">
@@ -426,7 +535,7 @@ fetchpriority="high">
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="nekretnine"
      href="https://www.facebook.com/reel/1986640002272949"
      target="_blank"
      rel="noopener noreferrer">
@@ -451,7 +560,7 @@ fetchpriority="high">
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="interijeri"
      href="https://www.instagram.com/reel/DY9vVSCsqz5/"
      target="_blank"
      rel="noopener noreferrer">
@@ -476,7 +585,7 @@ fetchpriority="high">
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="interijeri"
      href="https://www.instagram.com/reel/DZIYJbVMKgL/"
      target="_blank"
      rel="noopener noreferrer">
@@ -501,7 +610,7 @@ fetchpriority="high">
     </div>
   </a>
 
-  <a class="project-card"
+  <a class="project-card" data-category="interijeri"
      href="https://www.instagram.com/reel/DZ2bpaLsVhX/"
      target="_blank"
      rel="noopener noreferrer">
@@ -617,5 +726,6 @@ fetchpriority="high">
 
   <script src="projects.js"></script>
   <script src="script.js"></script>
+  <script src="portfolio-filters.js"></script>
 </body>
 </html>
