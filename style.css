@@ -494,12 +494,57 @@ button {
   .legal-links, .legal-nav { align-items: flex-start; justify-content: flex-start; }
 }
 
-/* PORTFOLIO FILTERI */
-.portfolio-filters { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin: -8px 0 -42px; }
-.portfolio-filter { color:#a6a6a6; background:transparent; border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:11px 19px; font-size:13px; font-weight:500; cursor:pointer; transition:color .18s,border-color .18s,background-color .18s; }
-.portfolio-filter:hover { color:#fff; border-color:rgba(255,255,255,.55); }
-.portfolio-filter.is-active { background:#f4f4f4; color:#101010; border-color:#f4f4f4; }
-.portfolio-filter:focus-visible { outline:2px solid #fff; outline-offset:3px; }
-.project-card[hidden], .portfolio-empty[hidden] { display:none !important; }
-.portfolio-empty { color:#aaa; font-size:15px; padding:60px 0 36px; }
-@media(max-width:640px) { .portfolio-filters { gap:8px; margin:0 0 -34px; } .portfolio-filter { font-size:12px; padding:10px 14px; } }
+/* PORTFOLIO FILTERI: diskretan padajući izbornik na desnoj strani */
+.portfolio-filters {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin: -8px 0 -42px;
+}
+.portfolio-filter-label {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 400;
+}
+.portfolio-select-wrap {
+  position: relative;
+  width: 212px;
+  max-width: 100%;
+}
+.portfolio-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid #cfcfcf;
+  border-bottom: 1.5px solid #cfcfcf;
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+.portfolio-filter-select {
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 38px 10px 16px;
+  background: #151515;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 6px;
+  color: #f4f4f4;
+  font: 500 13px "Inter", sans-serif;
+  cursor: pointer;
+}
+.portfolio-filter-select:hover { border-color: rgba(255,255,255,.48); }
+.portfolio-filter-select:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.portfolio-filter-select option { background: #151515; color: #f4f4f4; }
+.project-card[hidden], .portfolio-empty[hidden] { display: none !important; }
+.portfolio-empty { color: #aaa; font-size: 15px; padding: 60px 0 36px; }
+@media (max-width: 640px) {
+  .portfolio-filters { gap: 10px; margin: 0 0 -34px; }
+  .portfolio-select-wrap { width: min(205px, 60vw); }
+  .portfolio-filter-select { min-height: 44px; }
+}

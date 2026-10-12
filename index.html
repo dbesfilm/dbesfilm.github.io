@@ -23,12 +23,17 @@
       <p>Video montaža za nekretnine</p>
     </section>
 
-    <nav class="portfolio-filters" aria-label="Filtriraj radove">
-      <button type="button" class="portfolio-filter is-active" data-filter="sve" aria-pressed="true">Sve</button>
-      <button type="button" class="portfolio-filter" data-filter="nekretnine" aria-pressed="false">Nekretnine</button>
-      <button type="button" class="portfolio-filter" data-filter="interijeri" aria-pressed="false">Dizajn interijera</button>
-      <button type="button" class="portfolio-filter" data-filter="eventi" aria-pressed="false">Eventi</button>
-    </nav>
+    <div class="portfolio-filters">
+      <label for="portfolio-filter" class="portfolio-filter-label">Filtriraj:</label>
+      <div class="portfolio-select-wrap">
+        <select id="portfolio-filter" class="portfolio-filter-select" aria-label="Filtriraj radove">
+          <option value="sve">Svi radovi</option>
+          <option value="nekretnine">Nekretnine</option>
+          <option value="interijeri">Dizajn interijera</option>
+          <option value="eventi">Eventi</option>
+        </select>
+      </div>
+    </div>
     <p class="portfolio-empty" id="portfolio-empty" hidden role="status">U ovoj kategoriji još nema objavljenih radova.</p>
 
     <section class="work-grid" id="portfolio-grid">
@@ -208,16 +213,15 @@
     </div>
   </a>
 
-
-  <a class="project-card" data-category="eventi"
-     href="https://www.instagram.com/century21croatia/reel/DdjIRCxiaOp/"
+<a class="project-card" data-category="eventi"
+     href="https://www.facebook.com/reel/2629870754056843"
      target="_blank"
      rel="noopener noreferrer">
     <div class="project-image-wrap">
       <img
         class="project-image"
-        src="assets/images/gk2025-thumbnail.webp"
-        alt="Golden Key 2025 – najbolje misli Ivice Kostelića"
+        src="assets/images/team-build-thumbnail.webp"
+        alt="CENTURY 21 Teambuilding 2026"
         loading="lazy"
         decoding="async">
       <div class="project-overlay">
@@ -225,11 +229,11 @@
       </div>
     </div>
     <div class="project-info">
-      <h3 class="project-title">Najbolje misli Ivice Kostelića</h3>
-      <p class="project-description">Motivacijski trenuci koji su obilježili Golden Key Zagreb 2025.</p>
+      <h3 class="project-title">CENTURY 21 Teambuilding 2026</h3>
+      <p class="project-description">Dan ispunjen odličnom energijom, druženjem i trenucima koje vrijedi pamtiti.</p>
       <div class="project-meta">
         <div>Rezultat<strong>Promocija brenda</strong></div>
-        <div>Pregledi<strong>3.9K</strong></div>
+        <div>Pregledi<strong>1.1K</strong></div>
       </div>
     </div>
   </a>
@@ -259,15 +263,15 @@
     </div>
   </a>
 
-  <a class="project-card" data-category="eventi"
-     href="https://www.facebook.com/reel/2629870754056843"
+<a class="project-card" data-category="eventi"
+     href="https://www.instagram.com/century21croatia/reel/DdjIRCxiaOp/"
      target="_blank"
      rel="noopener noreferrer">
     <div class="project-image-wrap">
       <img
         class="project-image"
-        src="assets/images/team-build-thumbnail.webp"
-        alt="CENTURY 21 Teambuilding 2026"
+        src="assets/images/gk2025-thumbnail.webp"
+        alt="Golden Key 2025 – najbolje misli Ivice Kostelića"
         loading="lazy"
         decoding="async">
       <div class="project-overlay">
@@ -275,11 +279,11 @@
       </div>
     </div>
     <div class="project-info">
-      <h3 class="project-title">CENTURY 21 Teambuilding 2026</h3>
-      <p class="project-description">Dan ispunjen odličnom energijom, druženjem i trenucima koje vrijedi pamtiti.</p>
+      <h3 class="project-title">Najbolje misli Ivice Kostelića</h3>
+      <p class="project-description">Motivacijski trenuci koji su obilježili Golden Key Zagreb 2025.</p>
       <div class="project-meta">
         <div>Rezultat<strong>Promocija brenda</strong></div>
-        <div>Pregledi<strong>1.1K</strong></div>
+        <div>Pregledi<strong>3.9K</strong></div>
       </div>
     </div>
   </a>
