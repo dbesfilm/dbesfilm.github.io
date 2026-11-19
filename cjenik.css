@@ -44,3 +44,6 @@
   .price-amount::before { content:'AKTUALNA'; display:block; color:#858585; letter-spacing:.14em; font-size:9px; margin-bottom:7px; }
   .price-reference::before { content:'BAZNA*'; display:block; color:#858585; letter-spacing:.14em; font-size:9px; margin-bottom:7px; }
 }
+
+.machine-price-link a { text-decoration: underline; text-underline-offset: 3px; color: #f4f4f4; }
+.machine-price-link a:hover { opacity: .75; }

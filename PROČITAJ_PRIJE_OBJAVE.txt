@@ -1,0 +1,41 @@
+DBESFILM — ZAVRŠNI WEB CJENIK, 19. 11. 2026.
+
+SADRŽAJ ZA POSTAVLJANJE
+- index.html: izvorna naslovnica, uz JEDNU novu poveznicu "Cjenik usluga" u footeru.
+- style.css: NEIZMIJENJENA izvorna datoteka.
+- cjenik.css: izdvojeni stilovi cjenika.
+- cjenik/index.html: vizualni cjenik i link na CSV.
+- cjenik/99069423_ZA_SVA_PRODAJNA_MJESTA_USLUGA_001_20261119_1952.csv: strojno čitljiv cjenik.
+
+KOPIRANJE
+Raspakirajte i kopirajte sve navedene HTML/CSS datoteke i mapu cjenik/
+u GLAVNU MAPU postojeće web-stranice. Ne brišite postojeće assets/, scripts,
+projects.js, script.js, portfolio-filters.js i politika-privatnosti.html.
+Sačuvajte sigurnosnu kopiju postojećeg index.html i style.css.
+
+ZAKONSKA/TEHNIČKA NAPOMENA
+Strojno čitljivi CSV: UTF-8, stupci odvojeni točkom-zarezom,
+redoslijed: naziv usluge, maloprodajna cijena, informacija o posebnom obliku
+prodaje, bazna cijena. XML nije potreban ako postoji valjan CSV.
+U ovom paketu datum i vrijeme u imenu CSV datoteke označavaju PRIPREMU
+19. 11. 2026. u 19:52, a nisu dokaz stvarne objave na webu.
+Ako objavljujete drugog datuma ili sata, PREIMENUJTE CSV prema datumu i
+vremenu stvarne objave te ažurirajte njegov link u cjenik/index.html.
+Pri budućim promjenama provjerite obvezu objave na istoj URL adresi,
+arhiviranja zamijenjene datoteke najmanje 15 dana i ažuriranja do 11 sati
+na dan promjene, kada se propis primjenjuje.
+
+PROVJERA PODATAKA
+- Usluga snimanja: bazna cijena 30 EUR/sat na 10. 9. 2026. nije
+  neovisno potvrđena ponudom/računom; provjerite u svojoj evidenciji.
+- Sva četiri reda označena su 'Ne' za poseban oblik prodaje; ako je
+  za neku stavku stvarno na snazi akcija, to treba korigirati.
+- Matični broj obrta, OIB, poslovna adresa i cijene preneseni su
+  iz prethodnih dogovorenih podataka, nisu dodatno provjereni u registru.
+- Ovo je preventivna objava za B2B poslovanje. Prema HOK-ovim uputama
+  obveza baznih cijena ne odnosi se na isključivi B2B.
+
+IZVORI
+https://narodne-novine.nn.hr/clanci/sluzbeni/2026_11_132_1584.html
+https://narodne-novine.nn.hr/clanci/sluzbeni/2026_11_132_1583.html
+https://narodne-novine.nn.hr/clanci/sluzbeni/full/2026_09_105_1270.html
