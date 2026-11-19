@@ -1,0 +1,46 @@
+.price-page { max-width: 1440px; }
+.price-page .site-header { margin-bottom: 110px; }
+.price-intro { max-width: 1050px; padding-bottom: 60px; }
+.price-eyebrow { font-size: 12px; color: #a2a2a2; letter-spacing: .22em; font-weight: 600; margin: 0 0 26px; }
+.price-intro h1 { font-size: clamp(52px,8vw,112px); letter-spacing: -.075em; line-height: .95; font-weight: 800; margin: 0 0 30px; }
+.price-dot { color: #ce9642; }
+.price-lead { max-width: 730px; color: #aaa; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.65; margin: 0 0 38px; }
+.price-meta { display:flex; flex-wrap:wrap; gap:12px 30px; color:#888; font-size:12px; }
+.price-services { border-top: 1px solid rgba(255,255,255,.32); }
+.price-table-heading,.price-item { display:grid; grid-template-columns: minmax(0,1fr) 180px 170px; gap:26px; align-items:center; }
+.price-table-heading { font-size:10px; letter-spacing:.15em; color:#929292; padding:20px 0 16px; }
+.price-item { border-top:1px solid var(--line); padding:34px 0; }
+.price-service h2 { font-size:clamp(19px,2.1vw,26px); font-weight:650; letter-spacing:-.035em; margin:0 0 10px; }
+.price-service p { font-size:14px; line-height:1.7; color:#999; max-width:620px; margin:0; }
+.price-amount,.price-reference { margin:0; white-space:nowrap; }
+.price-amount strong { font-size:clamp(25px,2.7vw,36px); letter-spacing:-.06em; }
+.price-reference strong { font-size:clamp(23px,2.2vw,29px); font-weight:500; color:#b9b9b9; letter-spacing:-.05em; }
+.price-amount span,.price-reference span { color:#8d8d8d; font-size:13px; margin-left:4px; }
+.price-notes { margin-top:50px; padding:34px 0 12px; border-top:1px solid var(--line); max-width:900px; }
+.price-notes h2 { font-size:20px; letter-spacing:-.03em; margin:0 0 22px; }
+.price-notes p { font-size:14px; line-height:1.85; color:#a5a5a5; margin:0 0 17px; }
+.price-contact { margin:80px 0 100px; padding:36px 38px; background:#141414; border:1px solid var(--line); display:flex; justify-content:space-between; gap:28px; align-items:center; }
+.price-contact h2 { font-size:clamp(23px,3vw,35px); margin:0 0 10px; letter-spacing:-.04em; }
+.price-contact p { margin:0; color:#aaa; font-size:14px; line-height:1.6; }
+.price-contact .contact-button { flex-shrink:0; }
+.price-footer { margin-top:0; }
+@media(max-width:760px) {
+  .price-page .site-header { margin-bottom:65px; }
+  .price-intro { padding-bottom:46px; }
+  .price-table-heading { grid-template-columns: minmax(0,1fr) 100px 100px; gap:12px; font-size:9px; }
+  .price-item { grid-template-columns: minmax(0,1fr) 100px 100px; gap:12px; padding:25px 0; }
+  .price-service h2 { font-size:19px; }
+  .price-service p { font-size:12px; }
+  .price-amount strong { font-size:24px; }
+  .price-reference strong { font-size:21px; }
+  .price-contact { flex-direction:column; align-items:stretch; padding:26px; margin:60px 0 75px; }
+  .price-contact .contact-button { width:100%; }
+}
+@media(max-width:500px) {
+  .price-table-heading { grid-template-columns: 1fr 1fr; gap:8px; }
+  .price-table-heading span:first-child { grid-column:1/-1; }
+  .price-item { grid-template-columns: 1fr 1fr; gap:14px 8px; }
+  .price-service { grid-column:1/-1; }
+  .price-amount::before { content:'AKTUALNA'; display:block; color:#858585; letter-spacing:.14em; font-size:9px; margin-bottom:7px; }
+  .price-reference::before { content:'BAZNA*'; display:block; color:#858585; letter-spacing:.14em; font-size:9px; margin-bottom:7px; }
+}
