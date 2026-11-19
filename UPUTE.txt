@@ -1,0 +1,9 @@
+DBESFILM — SAMO CSV POVEZNICA U FOOTERU
+
+1. Kopiraj index.html u glavni folder stranice (zamijeni postojeći).
+2. Kopiraj CSV iz mape cjenik/ u istu mapu na hostingu.
+3. Ukloni staru datoteku cjenik/index.html ako više ne želiš prikaz HTML cjenika.
+4. style.css i ostatak stranice ostaju nepromijenjeni.
+5. Prije izmjene napravi sigurnosnu kopiju postojeće naslovnice.
+
+NAPOMENE: CSV datoteka ima radnu vremensku oznaku 20261119_1952. Ako propis zahtijeva vremensku oznaku stvarne objave, pri objavi prilagodi naziv i poveznicu u index.html. Za snimanje bazna cijena 30 EUR/sat 10.9.2026. nije neovisno dokumentarno potvrđena. Pri izmjenama pripazi na propisane obveze arhiviranja i ažuriranja, ako se primjenjuju.
